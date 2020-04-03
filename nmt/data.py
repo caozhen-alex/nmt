@@ -11,8 +11,8 @@ from torchtext.datasets import TranslationDataset
 from torchtext import data
 from torchtext.data import Dataset, Iterator, Field
 
-from joeynmt.constants import UNK_TOKEN, EOS_TOKEN, BOS_TOKEN, PAD_TOKEN
-from joeynmt.vocabulary import build_vocab, Vocabulary
+from nmt.constants import UNK_TOKEN, EOS_TOKEN, BOS_TOKEN, PAD_TOKEN
+from nmt.vocabulary import build_vocab, Vocabulary
 
 
 def load_data(data_cfg: dict) -> (Dataset, Dataset, Optional[Dataset],

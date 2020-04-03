@@ -3,9 +3,9 @@ import random
 
 from torchtext.data.batch import Batch as TorchTBatch
 
-from joeynmt.batch import Batch
-from joeynmt.data import load_data, make_data_iter
-from joeynmt.constants import PAD_TOKEN
+from nmt.batch import Batch
+from nmt.data import load_data, make_data_iter
+from nmt.constants import PAD_TOKEN
 from .test_helpers import TensorTestCase
 
 

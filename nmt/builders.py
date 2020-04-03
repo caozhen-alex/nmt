@@ -10,7 +10,7 @@ from torch.optim.lr_scheduler import _LRScheduler, ReduceLROnPlateau, \
     StepLR, ExponentialLR
 from torch.optim import Optimizer
 
-from joeynmt.helpers import ConfigurationError
+from nmt.helpers import ConfigurationError
 
 
 def build_gradient_clipper(config: dict) -> Optional[Callable]:
@@ -109,7 +109,7 @@ def build_scheduler(config: dict, optimizer: Optimizer, scheduler_mode: str,
         - "plateau": see `torch.optim.lr_scheduler.ReduceLROnPlateau`
         - "decaying": see `torch.optim.lr_scheduler.StepLR`
         - "exponential": see `torch.optim.lr_scheduler.ExponentialLR`
-        - "noam": see `joeynmt.transformer.NoamScheduler`
+        - "noam": see `nmt.transformer.NoamScheduler`
 
     If no scheduler is specified, returns (None, None) which will result in
     a constant learning rate.

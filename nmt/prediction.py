@@ -11,14 +11,14 @@ import numpy as np
 import torch
 from torchtext.data import Dataset, Field
 
-from joeynmt.helpers import bpe_postprocess, load_config, \
+from nmt.helpers import bpe_postprocess, load_config, \
     get_latest_checkpoint, load_checkpoint, store_attention_plots
-from joeynmt.metrics import bleu, chrf, token_accuracy, sequence_accuracy
-from joeynmt.model import build_model, Model
-from joeynmt.batch import Batch
-from joeynmt.data import load_data, make_data_iter, MonoDataset
-from joeynmt.constants import UNK_TOKEN, PAD_TOKEN, EOS_TOKEN
-from joeynmt.vocabulary import Vocabulary
+from nmt.metrics import bleu, chrf, token_accuracy, sequence_accuracy
+from nmt.model import build_model, Model
+from nmt.batch import Batch
+from nmt.data import load_data, make_data_iter, MonoDataset
+from nmt.constants import UNK_TOKEN, PAD_TOKEN, EOS_TOKEN
+from nmt.vocabulary import Vocabulary
 
 
 # pylint: disable=too-many-arguments,too-many-locals,no-member

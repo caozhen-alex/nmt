@@ -20,8 +20,8 @@ from torch.utils.tensorboard import SummaryWriter
 
 from torchtext.data import Dataset
 import yaml
-from joeynmt.vocabulary import Vocabulary
-from joeynmt.plotting import plot_heatmap
+from nmt.vocabulary import Vocabulary
+from nmt.plotting import plot_heatmap
 
 
 class ConfigurationError(Exception):

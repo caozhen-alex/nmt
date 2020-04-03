@@ -9,15 +9,15 @@ import torch.nn as nn
 from torch import Tensor
 import torch.nn.functional as F
 
-from joeynmt.initialization import initialize_model
-from joeynmt.embeddings import Embeddings
-from joeynmt.encoders import Encoder, RecurrentEncoder, TransformerEncoder
-from joeynmt.decoders import Decoder, RecurrentDecoder, TransformerDecoder
-from joeynmt.constants import PAD_TOKEN, EOS_TOKEN, BOS_TOKEN
-from joeynmt.search import beam_search, greedy
-from joeynmt.vocabulary import Vocabulary
-from joeynmt.batch import Batch
-from joeynmt.helpers import ConfigurationError
+from nmt.initialization import initialize_model
+from nmt.embeddings import Embeddings
+from nmt.encoders import Encoder, RecurrentEncoder, TransformerEncoder
+from nmt.decoders import Decoder, RecurrentDecoder, TransformerDecoder
+from nmt.constants import PAD_TOKEN, EOS_TOKEN, BOS_TOKEN
+from nmt.search import beam_search, greedy
+from nmt.vocabulary import Vocabulary
+from nmt.batch import Batch
+from nmt.helpers import ConfigurationError
 
 
 class Model(nn.Module):

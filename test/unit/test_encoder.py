@@ -1,7 +1,7 @@
 from torch.nn import GRU, LSTM
 import torch
 
-from joeynmt.encoders import RecurrentEncoder
+from nmt.encoders import RecurrentEncoder
 from .test_helpers import TensorTestCase
 
 

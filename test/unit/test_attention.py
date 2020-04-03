@@ -1,6 +1,6 @@
 import torch
 
-from joeynmt.attention import BahdanauAttention, LuongAttention
+from nmt.attention import BahdanauAttention, LuongAttention
 from .test_helpers import TensorTestCase
 
 

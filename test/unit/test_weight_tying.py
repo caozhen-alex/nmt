@@ -2,10 +2,10 @@ from torch.nn import GRU, LSTM
 import torch
 import numpy as np
 
-from joeynmt.encoders import RecurrentEncoder
+from nmt.encoders import RecurrentEncoder
 from .test_helpers import TensorTestCase
-from joeynmt.model import build_model
-from joeynmt.vocabulary import Vocabulary
+from nmt.model import build_model
+from nmt.vocabulary import Vocabulary
 import copy
 
 

@@ -1,7 +1,7 @@
 import unittest
 import os
 
-from joeynmt.vocabulary import Vocabulary
+from nmt.vocabulary import Vocabulary
 
 
 class TestVocabulary(unittest.TestCase):

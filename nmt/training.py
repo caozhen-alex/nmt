@@ -19,18 +19,18 @@ from torch.utils.tensorboard import SummaryWriter
 
 from torchtext.data import Dataset
 
-from joeynmt.model import build_model
-from joeynmt.batch import Batch
-from joeynmt.helpers import log_data_info, load_config, log_cfg, \
+from nmt.model import build_model
+from nmt.batch import Batch
+from nmt.helpers import log_data_info, load_config, log_cfg, \
     store_attention_plots, load_checkpoint, make_model_dir, \
     make_logger, set_seed, symlink_update, ConfigurationError
-from joeynmt.model import Model
-from joeynmt.prediction import validate_on_data
-from joeynmt.loss import XentLoss
-from joeynmt.data import load_data, make_data_iter
-from joeynmt.builders import build_optimizer, build_scheduler, \
+from nmt.model import Model
+from nmt.prediction import validate_on_data
+from nmt.loss import XentLoss
+from nmt.data import load_data, make_data_iter
+from nmt.builders import build_optimizer, build_scheduler, \
     build_gradient_clipper
-from joeynmt.prediction import test
+from nmt.prediction import test
 
 
 # pylint: disable=too-many-instance-attributes

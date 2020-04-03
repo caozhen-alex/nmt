@@ -1,6 +1,6 @@
 import torch
 
-from joeynmt.encoders import TransformerEncoder
+from nmt.encoders import TransformerEncoder
 from .test_helpers import TensorTestCase
 
 

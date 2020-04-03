@@ -1,6 +1,6 @@
 import torch
 
-from joeynmt.loss import XentLoss
+from nmt.loss import XentLoss
 from .test_helpers import TensorTestCase
 
 

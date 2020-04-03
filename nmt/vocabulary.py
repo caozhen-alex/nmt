@@ -9,7 +9,7 @@ import numpy as np
 
 from torchtext.data import Dataset
 
-from joeynmt.constants import UNK_TOKEN, DEFAULT_UNK_ID, \
+from nmt.constants import UNK_TOKEN, DEFAULT_UNK_ID, \
     EOS_TOKEN, BOS_TOKEN, PAD_TOKEN
 
 
@@ -72,7 +72,7 @@ class Vocabulary:
 
         :param file: path to file where the vocabulary is written
         """
-        with open(file, "w") as open_file:
+        with open(file, "w", encoding="utf-8") as open_file:
             for t in self.itos:
                 open_file.write("{}\n".format(t))
 
