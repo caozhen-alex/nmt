@@ -144,7 +144,7 @@ class PositionalEncoding(nn.Module):
                               -(math.log(10000.0) / size)))
         pe[:, 0::2] = torch.sin(position.float() * div_term)
         pe[:, 1::2] = torch.cos(position.float() * div_term)
-        pe = pe.unsqueeze(0)  # shape: [1, size, max_len]
+        pe = pe.unsqueeze(0)  # shape: [1, max_len, size]
         super(PositionalEncoding, self).__init__()
         self.register_buffer('pe', pe)
         self.dim = size
@@ -153,7 +153,7 @@ class PositionalEncoding(nn.Module):
         """Embed inputs.
         Args:
             emb (FloatTensor): Sequence of word vectors
-                ``(seq_len, batch_size, self.dim)``
+                ``(batch_size, seq_len, self.dim)``
         """
         # Add position encodings
         return emb + self.pe[:, :emb.size(1)]

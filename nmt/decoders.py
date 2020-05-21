@@ -311,7 +311,7 @@ class RecurrentDecoder(Decoder):
         :param encoder_output: hidden states from the encoder,
             shape (batch_size, src_length, encoder.output_size)
         :param encoder_hidden: last state from the encoder,
-            shape (batch_size x encoder.output_size)
+            shape (batch_size, encoder.output_size)
         :param src_mask: mask for src states: 0s for padded areas,
             1s for the rest, shape (batch_size, 1, src_length)
         :param unroll_steps: number of steps to unrol the decoder RNN
