@@ -3,12 +3,12 @@ name: "transformer"
 data:
     src: "en"
     trg: "zh"
-    train: "data/en_zh/train"
-    dev:   "data/en_zh/dev"
-    test:  "data/en_zh/test"
+    train: "data/en_zh2/train"
+    dev:   "data/en_zh2/dev"
+    test:  "data/en_zh2/test"
     level: "word"
     lowercase: False
-    max_sent_length: 80
+    max_sent_length: 100
     src_voc_limit: 30000
     trg_voc_limit: 30000
 #    src_vocab: "data/en_zh/vocab.txt"
@@ -41,7 +41,7 @@ training:
     validation_freq: 4000
     logging_freq: 100
     eval_metric: "bleu"
-    model_dir: "models/en_zh_transformer"
+    model_dir: "models/en_zh_transformer3"
     overwrite: False
     shuffle: True
     use_cuda: True
